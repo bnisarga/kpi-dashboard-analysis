@@ -9,6 +9,7 @@ import { CalculatedFieldBuilder } from '../components/CalculatedFieldBuilder';
 import { FilterBar } from '../components/FilterBar';
 import { DashboardGrid } from '../components/DashboardGrid';
 import { DataCleaningReport } from '../components/DataCleaningReport';
+import { EvaluationMetrics } from '../components/EvaluationMetrics';
 import { KPISuggestions } from '../components/KPISuggestions';
 import { DecisionSupportPanel } from '../components/DecisionSupportPanel';
 import { CorrelationMatrix } from '../components/CorrelationMatrix';
@@ -36,6 +37,9 @@ function DashboardContent() {
           <>
             {/* Data quality report — inline block right below the file bar */}
             <DataCleaningReport />
+
+            {/* Empirical Evaluation & Performance Metrics panel */}
+            <EvaluationMetrics />
 
             {/* Data preview with load-more */}
             <DataPreview />
